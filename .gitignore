@@ -1,0 +1,67 @@
+
+# === Python / Django ===
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+*.pot
+*.pyc
+db.sqlite3
+*.py.class
+*.egg-info/
+media/
+staticfiles/
+.env
+.env.*
+myenv/
+*.pem
+
+# Django cache / compiled stuff
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.mo
+*.pot
+*.log
+
+# Migrations (optional — if you want to keep them, remove this line)
+# */migrations/
+
+# === Node / React ===
+node_modules/
+build/
+dist/
+.cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# === OS / Editor ===
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.bak
+*.tmp
+
+# === Coverage / Reports ===
+htmlcov/
+.coverage
+.tox/
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# === Others ===
+*.tar
+*.zip
+*.rar
+*.7z
