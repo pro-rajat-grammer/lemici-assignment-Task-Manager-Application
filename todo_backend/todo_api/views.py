@@ -29,17 +29,6 @@ def task_list(request):
         return Response(serializer.data)
 
 
-# @api_view(['PUT'])
-# def complete_task(request, id):
-#     try:
-#         task = Task.objects.get(id=id)
-#     except:
-#         return Response({'error': 'Task not found'}, status=status.HTTP_404_NOT_FOUND)
-
-#     task.completed = True
-#     task.save()
-#     serializer = TaskSerializer(task)
-#     return Response(serializer.data)
 
 
 @api_view(['GET', 'PUT', 'DELETE'])

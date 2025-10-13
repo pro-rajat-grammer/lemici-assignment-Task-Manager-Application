@@ -11,8 +11,7 @@ const EditTask = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios
-      .get(`http://127.0.0.1:8000/api/task/${index}`)
+    axios.get(`http://127.0.0.1:8000/api/task/${index}`)
       .then((response) => {
         setTitle(response.data.title);
         setDescription(response.data.description);
@@ -26,8 +25,7 @@ const EditTask = () => {
     e.preventDefault();
     const payload = { title, description };
 
-    axios
-      .put(`http://127.0.0.1:8000/api/task/${index}`, payload)
+    axios.put(`http://127.0.0.1:8000/api/task/${index}`, payload)
       .then(() => {
         console.log("Data has been updated");
         navigate("/tasks");
@@ -43,24 +41,13 @@ const EditTask = () => {
         <h1 className={styles.updateTitle}>UPDATE TASK</h1>
 
         <label className={styles.label}>Title</label>
-        <input
-          type="text"
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-          className={styles.input}
-        />
+        <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} className={styles.input} />
 
         <label className={styles.label}>Description</label>
-        <textarea
-          value={description}
-          onChange={(e) => setDescription(e.target.value)}
-          className={styles.textarea}
-          rows={4}
-        ></textarea>
+        <textarea value={description} onChange={(e) => setDescription(e.target.value)} className={styles.textarea} rows={4}></textarea>
 
-        <button type="submit" className={styles.submitBtn}>
-          Update
-        </button>
+        <button type="submit" className={styles.submitBtn}>Update</button>
+
       </form>
     </div>
   );
