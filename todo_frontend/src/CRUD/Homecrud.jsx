@@ -14,8 +14,8 @@ const Homecrud = () => {
         <Link to="/tasks">All Tasks</Link>
         <Link to="/tasks?status=pending">Pending</Link>
         <Link to="/tasks?status=completed">Completed</Link>
-        <Link to="">Trash</Link>
-        <Link to="">About</Link>
+        <Link to="#">Trash</Link>
+        <Link to="#">About</Link>
       </div>
     </nav>
   );
